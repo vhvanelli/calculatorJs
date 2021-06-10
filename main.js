@@ -13,10 +13,10 @@ function insert(num){
     else{
         document.getElementById("result").style.fontSize = "max(0.1em,4vw)";
     }
-
 }
 function clean(){
     document.getElementById("result").innerHTML = "";
+    document.getElementById("backresult").innerHTML = "";
 }
 function back(){
     var result = document.getElementById("result").innerHTML;
@@ -25,6 +25,8 @@ function back(){
 function calcule(){
     var result = document.getElementById("result").innerHTML;
     if(result){
+        var result = document.getElementById("result").innerHTML;
+        document.getElementById("backresult").innerHTML = result;
         document.getElementById("result").innerHTML = eval(result);
     }
     else{
