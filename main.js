@@ -33,3 +33,7 @@ function calcule(){
         document.getElementById("result").innerHTM = ""
     }
 }
+function percent(){
+    var result = document.getElementById("result").innerHTML;
+    
+}
