@@ -12,14 +12,15 @@
 </head>
 <body>
     <div id="container">
-        <div id="calculadora">
+        <div id="calculator">
             <div id="display-id">
-                    <p id="result"></p>
+                    <span id="backresult"></span>
+                    <span id="result"></span>
             </div>
             <div class="buttons-container">
                 <button class="buttons" onclick="clean()">C</button>
-                <button class="buttons">%</button>
-                <button class="buttons">?</button>
+                <button class="buttons" onclick="percent()">%</button>
+                <button class="buttons" onclick="reverseSignal()">&#177;</button>
                 <button class="buttons basic-operations" onclick="insert('/')">÷</button>
                 <button class="buttons" onclick="insert('7')">7</button>
                 <button class="buttons" onclick="insert('8')">8</button>
